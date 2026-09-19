@@ -14,87 +14,16 @@
 
 ## 収録アプリ（v1.0.0）
 
+「概要」をクリックすると説明が展開されます。
+
 | アプリ | 概要 |
 |---|---|
-| 🗄️ SsDbClient | DB接続・SQL実行・データ集計・DB定義出力 |
-| 📄 SsFileList | フォルダ内ファイルの一覧化・出力 |
-| 🔊 SsAudioSwitcher | 再生/録音デバイスのワンクリック切替 |
-| ✂️ SsFileSplitter | 大容量ファイルの分割・結合 |
-| 🏠 SsSwitchBot | SwitchBot デバイス・シーン操作 |
-| 💬 SsMsgBoxTest | MessageBox の見た目・戻り値確認 |
-
-各アプリ名をクリックすると詳細（機能一覧）が展開されます。
-
-<details>
-<summary><strong>🗄️ SsDbClient — データベースクライアント</strong></summary>
-
-Oracle / SQLite / SQL Server / ODBC / OleDb に対応した汎用DBクライアントです。
-
-- テーブル・ビューなどの一覧表示とデータ閲覧
-- SQL エディタでのクエリ実行、SQLフィルタ・SQL解析（Oracle）
-- データの集計（グラフ表示付き）
-- DB定義の出力、データの出力・取込・作成（旧 SsDbTools の機能を統合）
-- 接続情報は DPAPI で暗号化して保存（平文保存なし）
-
-</details>
-
-<details>
-<summary><strong>📄 SsFileList — ファイル一覧作成ツール</strong></summary>
-
-指定フォルダ配下のファイル情報を一覧化するツールです。
-
-- フォルダ選択→検索でファイル一覧を収集（サブフォルダ再帰対応）
-- ファイル名・サイズ・更新日時などの列をカスタマイズして出力
-- 収集結果同士の比較・マージ、既存有無チェックにも対応
-
-</details>
-
-<details>
-<summary><strong>🔊 SsAudioSwitcher — オーディオデバイス切替ツール</strong></summary>
-
-タスクトレイに常駐し、再生/録音デバイスを素早く切り替えます。
-
-- トレイアイコンを**左クリックで出力デバイスを順送り切替**、**右クリックでミキサー画面**を表示
-- 出力・入力それぞれにホットキーを割り当てて循環切替が可能
-- ミキサー画面で音量調整・ミュートも操作可能
-- Windows起動時の自動起動に対応
-
-</details>
-
-<details>
-<summary><strong>✂️ SsFileSplitter — ファイル分割・結合ツール</strong></summary>
-
-大容量ファイルを指定サイズ／個数で分割します。
-
-- ファイル・フォルダをドラッグ＆ドロップで指定可能
-- 分割数 or 分割サイズ（KB/MB/GB単位）を指定
-- 分割後の結合用バッチファイルを自動生成
-- 分割前にプレビューで結果を確認可能
-
-</details>
-
-<details>
-<summary><strong>🏠 SsSwitchBot — SwitchBot コントローラー</strong></summary>
-
-SwitchBot API を使ってデバイス・シーン・グループを操作します。
-
-- デバイス一覧表示、個別デバイスへのコマンド送信（赤外線リモコン／エアコン対応）
-- シーンの一覧・実行、グループ編集
-- タスクトレイ常駐（`--tray` 起動でスタートアップから自動起動）
-- コマンドライン実行にも対応（`SsSwitchBot.exe "シーン名"` や `"デバイス名" "ボタン名"` でショートカットやタスクスケジューラから呼び出し可能）
-
-</details>
-
-<details>
-<summary><strong>💬 SsMsgBoxTest — MessageBox 表示テストツール</strong></summary>
-
-`System.Windows.Forms.MessageBox` の見た目と戻り値を確認するための開発支援ツールです。
-
-- アイコン（エラー／警告／インフォメーションなど）・ボタン構成・タイトル・メッセージ文を指定して表示
-- よくあるパターン（エラー／警告／インフォメーション）をワンクリックで設定
-- 実際に表示した際の戻り値（OK/Cancel等）を確認できる
-
-</details>
+| SsDbClient | <details><summary>汎用DBクライアントツール</summary><br>SQL Server / Oracle / SQLite / ODBC / OleDb に対応した汎用DBクライアントです。<br>・SQL実行、実行計画取得、トランザクション、コミット、ロールバック対応<br>・データの一覧表示・更新、BLOB表示(テキスト、画像、バイト配列、BASE64)、集計機能（グラフ表示付き）<br>・各種DB定義表示（テーブル、ビュー、プロシージャ―など）<br>・各種DB定義は設定により自由に追加、表示内容変更可能<br>・データ一括出力、データ一括取込、データ一括自動作成</details> |
+| SsFileList | <details><summary>ファイルリストツール</summary><br>ファイルを検索し、リスト化表示します。<br>・フォルダ名・ファイル名・ファイル内まで検索可能<br>・取得情報を指定可能（ファイル属性、バージョン、文字コード、ハッシュ値、ブロックなど）<br>・ファイルリストの出力（リリース時のエビデンスなどに使用可能）</details> |
+| SsAudioSwitcher | <details><summary>オーディオデバイス切替ツール</summary><br>オーディオデバイスをワンクリックで切り替えます。<br>・トレイアイコンで左クリックでデバイス切り替え、右クリックでミキサー画面を表示<br>・入力出力デバイスを連動して切り替えが可能<br>・出力・入力それぞれにホットキーを割り当て循環切替が可能<br>・ミキサー画面で音量調整・ミュートも操作可能</details> |
+| SsFileSplitter | <details><summary>ファイル分割・結合ツール</summary><br>大容量ファイルを指定サイズ／個数で分割します。<br>・分割数 or 分割サイズ（KB/MB/GB単位）を指定<br>・分割前にプレビューで分割数・サイズを確認可能<br>・分割後の結合用バッチファイルを自動生成</details> |
+| SsSwitchBot | <details><summary>SwitchBotコントローラー</summary><br>SwitchBot API を使ってデバイス・シーンを操作します。<br>・デバイス一覧表示、個別デバイスへのコマンド送信<br>・シーンの一覧・実行、グループ編集<br>・タスクトレイに常駐可能<br>・コマンドライン実行にも対応（SsSwitchBot.exe "シーン名" や "デバイス名" "ボタン名" でショートカットやタスクスケジューラから呼び出し可能）</details> |
+| SsMsgBoxTest | <details><summary>MessageBox 表示テストツール</summary><br>指定した条件のメッセージを表示・確認できる開発支援ツールです。<br>・アイコン（エラー／警告／インフォメーション／クエスチョンなど）・ボタン構成・タイトル・メッセージ文を指定して表示<br>・よくあるパターン（エラー／警告／インフォメーション）をワンクリックで設定<br>・実際に表示した際の戻り値（OK/Cancel等）を確認可能</details> |
 
 ## 使い方
 
