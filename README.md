@@ -16,14 +16,17 @@
 
 | アプリ | 概要 |
 |---|---|
-| [🗄️ SsDbClient](#️-ssdbclient--データベースクライアント) | DB接続・SQL実行・データ集計・DB定義出力 |
-| [📄 SsFileList](#-ssfilelist--ファイル一覧作成ツール) | フォルダ内ファイルの一覧化・出力 |
-| [🔊 SsAudioSwitcher](#-ssaudioswitcher--オーディオデバイス切替ツール) | 再生/録音デバイスのワンクリック切替 |
-| [✂️ SsFileSplitter](#️-ssfilesplitter--ファイル分割結合ツール) | 大容量ファイルの分割・結合 |
-| [🏠 SsSwitchBot](#-ssswitchbot--switchbot-コントローラー) | SwitchBot デバイス・シーン操作 |
-| [💬 SsMsgBoxTest](#-ssmsgboxtest--messagebox-表示テストツール) | MessageBox の見た目・戻り値確認 |
+| 🗄️ SsDbClient | DB接続・SQL実行・データ集計・DB定義出力 |
+| 📄 SsFileList | フォルダ内ファイルの一覧化・出力 |
+| 🔊 SsAudioSwitcher | 再生/録音デバイスのワンクリック切替 |
+| ✂️ SsFileSplitter | 大容量ファイルの分割・結合 |
+| 🏠 SsSwitchBot | SwitchBot デバイス・シーン操作 |
+| 💬 SsMsgBoxTest | MessageBox の見た目・戻り値確認 |
 
-### 🗄️ SsDbClient — データベースクライアント
+各アプリ名をクリックすると詳細（機能一覧）が展開されます。
+
+<details>
+<summary><strong>🗄️ SsDbClient — データベースクライアント</strong></summary>
 
 Oracle / SQLite / SQL Server / ODBC / OleDb に対応した汎用DBクライアントです。
 
@@ -33,7 +36,10 @@ Oracle / SQLite / SQL Server / ODBC / OleDb に対応した汎用DBクライア�
 - DB定義の出力、データの出力・取込・作成（旧 SsDbTools の機能を統合）
 - 接続情報は DPAPI で暗号化して保存（平文保存なし）
 
-### 📄 SsFileList — ファイル一覧作成ツール
+</details>
+
+<details>
+<summary><strong>📄 SsFileList — ファイル一覧作成ツール</strong></summary>
 
 指定フォルダ配下のファイル情報を一覧化するツールです。
 
@@ -41,7 +47,10 @@ Oracle / SQLite / SQL Server / ODBC / OleDb に対応した汎用DBクライア�
 - ファイル名・サイズ・更新日時などの列をカスタマイズして出力
 - 収集結果同士の比較・マージ、既存有無チェックにも対応
 
-### 🔊 SsAudioSwitcher — オーディオデバイス切替ツール
+</details>
+
+<details>
+<summary><strong>🔊 SsAudioSwitcher — オーディオデバイス切替ツール</strong></summary>
 
 タスクトレイに常駐し、再生/録音デバイスを素早く切り替えます。
 
@@ -50,7 +59,10 @@ Oracle / SQLite / SQL Server / ODBC / OleDb に対応した汎用DBクライア�
 - ミキサー画面で音量調整・ミュートも操作可能
 - Windows起動時の自動起動に対応
 
-### ✂️ SsFileSplitter — ファイル分割・結合ツール
+</details>
+
+<details>
+<summary><strong>✂️ SsFileSplitter — ファイル分割・結合ツール</strong></summary>
 
 大容量ファイルを指定サイズ／個数で分割します。
 
@@ -59,7 +71,10 @@ Oracle / SQLite / SQL Server / ODBC / OleDb に対応した汎用DBクライア�
 - 分割後の結合用バッチファイルを自動生成
 - 分割前にプレビューで結果を確認可能
 
-### 🏠 SsSwitchBot — SwitchBot コントローラー
+</details>
+
+<details>
+<summary><strong>🏠 SsSwitchBot — SwitchBot コントローラー</strong></summary>
 
 SwitchBot API を使ってデバイス・シーン・グループを操作します。
 
@@ -68,13 +83,18 @@ SwitchBot API を使ってデバイス・シーン・グループを操作しま
 - タスクトレイ常駐（`--tray` 起動でスタートアップから自動起動）
 - コマンドライン実行にも対応（`SsSwitchBot.exe "シーン名"` や `"デバイス名" "ボタン名"` でショートカットやタスクスケジューラから呼び出し可能）
 
-### 💬 SsMsgBoxTest — MessageBox 表示テストツール
+</details>
+
+<details>
+<summary><strong>💬 SsMsgBoxTest — MessageBox 表示テストツール</strong></summary>
 
 `System.Windows.Forms.MessageBox` の見た目と戻り値を確認するための開発支援ツールです。
 
 - アイコン（エラー／警告／インフォメーションなど）・ボタン構成・タイトル・メッセージ文を指定して表示
 - よくあるパターン（エラー／警告／インフォメーション）をワンクリックで設定
 - 実際に表示した際の戻り値（OK/Cancel等）を確認できる
+
+</details>
 
 ## 使い方
 
